@@ -11,8 +11,7 @@ namespace C0732149_CSD3354_A1
         public JournalEntry(string note, int dist)
         {
             villageName = note; distanceTraveled = dist;
-            // TO DO : What additional code must you add to enable the Calculate Distance algorithm to 
-            // produce an accurate result?
+         
         }
         public int HowFarToGetBack = 0;
         private string villageName;
@@ -26,12 +25,12 @@ namespace C0732149_CSD3354_A1
         private static JournalEntry je;
         public static bool FoundAstrilde = false;
 
-        // TO DO
+       
 
         public static int CalculateDistanceWalked()
         {
             int DistanceWalked = 0;
-            // walk over the List and add the distances
+          
             foreach (var je in HugiJournal)
             {
                 Console.WriteLine(" {0}  --   {1} *** --- {2} ", je.getDistanceWalked(), je.getVillageName(), je.HowFarToGetBack);
@@ -44,7 +43,7 @@ namespace C0732149_CSD3354_A1
     class CountrySide
     {
 
-        // Create the LinkedList to reflect the Map in the PowerPoint Instructions
+       
         Village Maeland;
         Village Helmholtz;
         Village Alst;
@@ -57,8 +56,7 @@ namespace C0732149_CSD3354_A1
         {
             if (Hugi.FoundAstrilde) return;
 
-            // Here Hugi records his travels, as any Norse Hero will do:
-            // TO DO : How does Hugi journal his visit to each village?
+          
 
             Console.WriteLine("I am in {0}", CurrentVillage.VillageName);
 
@@ -69,8 +67,7 @@ namespace C0732149_CSD3354_A1
                 Console.WriteLine("Astrilde, I walked {0} vika to find you. Will you marry me?", Hugi.CalculateDistanceWalked());
                 Hugi.FoundAstrilde = true;
             }
-
-            // TO DO: Complete this section to make the Recursion work           
+          
 
 
         }
@@ -80,11 +77,11 @@ namespace C0732149_CSD3354_A1
             Alst = new Village("Alst", false);
             Schvenig = new Village("Schvenig", false);
             Wessig = new Village("Wessig", false);
-            // TO DO: Complete this section
+           
 
             Alst.VillageSetup(0, Schvenig, Wessig);
             Schvenig.VillageSetup(14, Maeland, Helmholtz);
-            // TO DO: Complete this section
+         
 
 
         }
@@ -93,14 +90,12 @@ namespace C0732149_CSD3354_A1
         {
             try
             {
-                // Create an instance of StreamReader to read from a file.
-                // The using statement also closes the StreamReader.
+               
                 using (StreamReader sr = new StreamReader("c:/area51/annoucement.txt"))
                 {
                     string line;
 
-                    // Read and display lines from the file until 
-                    // the end of the file is reached. 
+                 
                     while ((line = sr.ReadLine()) != null)
                     {
                         Console.WriteLine(line);
@@ -109,7 +104,7 @@ namespace C0732149_CSD3354_A1
             }
             catch (Exception e)
             {
-                // Let the user know what went wrong.
+          
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(e.Message);
             }
