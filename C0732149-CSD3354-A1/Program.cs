@@ -113,7 +113,7 @@ namespace C0732149_CSD3354_A1
 
     class Village
     {
-        // http://www.vikinganswerlady.com/measurement.shtml
+       
 
         public Village(string _villageName, bool _isAHere)
         {
