@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C0732149_CSD3354_A1
 {
-    sing System;
+ 
 
 class JournalEntry
 {
